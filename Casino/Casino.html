@@ -1871,6 +1871,10 @@
                 error.textContent = "Enter the bet first!";
                 return;
             }
+            if(Number(input.value) > balance_amount){
+                error.textContent = "Bet gotta be lower than ur balance!"
+                return;
+            }
 
             error.textContent = "";
 
@@ -2030,4 +2034,5 @@
 
 
 </body>
+
 </html>
